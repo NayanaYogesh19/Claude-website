@@ -8,65 +8,109 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #002147;
+    background-color: #000;
     padding: 15px;
-    color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbar a {
-    color: white;
-    margin: 0 10px;
+    color: #ff8800;
+    margin: 0 12px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: white;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #004080, #00aaff);
-    color: white;
+    background: linear-gradient(to right, #000, #ff8800);
     text-align: center;
-    padding: 80px 20px;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
 }
 
 .hero button {
-    padding: 10px 20px;
-    background: white;
-    color: #004080;
+    padding: 12px 25px;
+    background: #ff8800;
+    color: black;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background: white;
 }
 
 /* Sections */
 .section {
-    padding: 40px;
+    padding: 50px;
     text-align: center;
 }
 
+.section h2 {
+    color: #ff8800;
+}
+
+/* Courses */
 .courses {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .card {
-    background: #f2f2f2;
-    padding: 20px;
-    width: 200px;
+    background: #222;
+    padding: 25px;
+    width: 220px;
     border-radius: 10px;
+    border: 2px solid #ff8800;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #ff8800;
+    color: black;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background: #ff8800;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: white;
 }
 
 /* Footer */
 .footer {
-    background: #002147;
-    color: white;
+    background: #000;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    color: #ff8800;
 }
 </style>
 
@@ -76,7 +120,7 @@ body {
 
 <!-- Navbar -->
 <div class="navbar">
-    <div><b>My College</b></div>
+    <div><b>🔥 My College</b></div>
     <div>
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -95,7 +139,7 @@ body {
 <!-- About Section -->
 <div class="section">
     <h2>About Us</h2>
-    <p>Our college provides quality education and great opportunities for students.</p>
+    <p>We provide high-quality education, industry exposure, and career opportunities for students.</p>
 </div>
 
 <!-- Courses Section -->
